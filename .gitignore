@@ -1,0 +1,10 @@
+*.tar.gz
+*.zip
+*.log
+*.key
+*.pem
+*.kubeconfig
+.private/
+evidence/
+.env*
+.DS_Store

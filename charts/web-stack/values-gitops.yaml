@@ -1,0 +1,11 @@
+# Independent Argo CD example based on the original Phase 9 Helm chart.
+# Do not use NodePort 30080: it belongs to live Helm release in namespace web.
+environment: gitops-v1
+namespace: web-gitops
+nginx:
+  image: nginx:1.31.8-alpine
+  replicas: 1
+  nodePort: 30081
+apache:
+  image: httpd:2.4.69-alpine
+  replicas: 1

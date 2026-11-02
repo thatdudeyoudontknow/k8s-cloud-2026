@@ -1,0 +1,5 @@
+Web stack installed in {{ .Release.Namespace }}.
+NGINX NodePort: {{ .Values.nginx.nodePort }}
+Prove both backends from inside your cluster:
+  curl http://10.88.50.12:{{ .Values.nginx.nodePort }}/a/
+  curl http://10.88.50.13:{{ .Values.nginx.nodePort }}/b/

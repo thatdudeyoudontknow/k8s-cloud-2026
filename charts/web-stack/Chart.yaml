@@ -1,0 +1,6 @@
+apiVersion: v2
+name: web-stack
+version: 0.1.0
+appVersion: "1.0"
+description: "Portfolio: NGINX reverse proxy and two Apache applications"
+type: application

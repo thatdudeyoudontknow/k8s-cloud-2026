@@ -1,0 +1,10 @@
+# Default values; environment-specific values are rendered by Jinja2.
+environment: dev
+namespace: web
+nginx:
+  image: nginx:1.31.8-alpine
+  replicas: 2
+  nodePort: 30080
+apache:
+  image: httpd:2.4.69-alpine
+  replicas: 1
